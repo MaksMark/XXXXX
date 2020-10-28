@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+-webkit-font-smoothing:antialiased; 
+-webkit-overflov-scrolling:touch;
+
+body
+{	
+	padding: 0;
+	margin: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+ul,li
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+/*шрифты*/
+h1,h2,h3,h4
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+
+p,a
+{
+	font-family: 'Montserrat', sans-serif;
+}
+/*====================================*/
+
+.row
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*позицеонирования елементов в колонках*/
+#logodiv
+{
+	display: flex;
+	justify-content:flex-start;	
+}
+
+#userdiv
+{
+	display: flex;
+	justify-content:center;
+}
+
+
+#menu1
+{
+	display: flex;
+	justify-content: center;
+}
+/*===========================================*/
+
+#logo img
+{
+	width: 150px;
+	margin: 0;
+}
+
+.menu
+{
+	display: flex;
+}
+
+.menu li
+{
+	margin-right: 60px;
+}
+
+.menu a
+{
+	text-decoration: none;
+	white-space: nowrap;
+	color: #1b1c1e;
+	font-size: 15px;
+	font-weight: 600;
+}
+ 
+ /*анимация меню*/
+
+.menu a:hover
+{
+
+   border-bottom: 4px #0317d3;
+}
+
+/*-----------------------------------*/
+
+.userimg  img
+{
+	width: 30px;
+}
+
+.userimg  .menup
+{
+ display: none;
+}
+
+.sections
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#txtcont
+{
+	display:block;
+}
+
+#txtcont h1
+{
+	white-space: nowrap;
+	
+	font-size: 40px;
+	color: #1b1c1e;
+}
+
+#txtcont p
+{
+	font-weight: 300;
+	color: #5c5c5c;
+}
+
+.button1
+{
+	padding: 10px 25px;
+	border-radius:20px;
+	border: 3px solid #0317d3;
+	font-weight: 700;
+	font-size: 20px;
+	color:#0317d3;
+	outline: none;
+}
+
+/*анимация кнопки*/
+.button1:hover
+{
+	color:#fff;
+	background-color: #0317d3;
+	transition:0.5s;
+}
+/*=========================*/
+
+#imgcont img
+{
+	width: 100%;
+	border-radius: 10px;
+}
+
+#mobileimg
+{
+	display:none;
+}
+
+#unicity h3
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7b7b7b;
+}
+
+#unicity
+{
+	margin-top: 50px;
+}
+
+#futer 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+
+#futer h2
+{
+    font-family: 'Manrope', sans-serif;
+ 	font-size: 18px;
+    color: #7b7b7b;
+}
+
+/* карточки*/
+
+#eco
+{
+	margin-top: 50px;
+}
+
+.eco
+{
+	width:100%;
+	text-align: center;
+	background-color: #ececee;
+	border-radius: 10px;
+}
+
+.eco img
+{
+	margin-top: 10px;
+	width: 50px;
+}
+
+.eco p
+{
+	margin-top: 15px;
+}
+/*=======================*/
+#mobileti
+{
+	margin-top: 50px;
+}
+
+.mobileti
+{
+	width:100%;
+	text-align: center;
+	background-color: #ececee;
+	border-radius: 10px;
+}
+
+.mobileti img
+{
+	margin-top: 10px;
+	width: 55px;
+}
+
+.mobileti p
+{
+	margin-top: 15px;
+}
+/*===========================*/
+#cloud
+{
+	margin-top:50px;
+}
+
+.cloud
+{
+	width:100%;
+	text-align: center;
+	background-color: #ececee;
+	border-radius: 10px;
+}
+
+.cloud img
+{
+   margin-top: 5px;
+   width: 55px;
+}
+
+.cloud p
+{
+	margin-top: 15px;
+}
+/*====================================*/
+
+@media screen and (max-width: 992px)
+{
+	.menu li
+	{
+		margin-right: 20px;
+	}
+
+	#txtcont h1
+	{
+		white-space: nowrap;
+		margin-top: 5%;
+		font-size: 25px;
+		font-weight: 400;
+		color: #1b1c1e;
+	}
+
+	#txtcont p
+	{
+		font-weight: 300;
+		color: #5c5c5c;
+	}
+
+	#imgcont
+	{
+		display: none;
+	}
+
+	#mobileimg
+	{
+		display:block;
+	}
+
+}
+
+@media screen and (max-width: 767px)
+{
+    
+    #menu1
+	{
+		display: none;
+	}
+
+	#mobileimg
+	{
+		display:none;
+		margin-top: 20px;
+	}
+
+	#txtcont
+	{
+		text-align: center;
+	}
+	
+	.user
+	{
+		display: none;
+	}
+
+	.userimg .menup
+	{
+		display: block;
+	}
+}
